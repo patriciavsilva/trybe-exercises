@@ -1,0 +1,28 @@
+h1 {
+      font-size: 65px; color: orange;
+  }
+  .back { background-color: rebeccapurple;
+  }
+  h1 {
+    font-family: sans-serif;
+  }
+  p {
+    font-weight: 600;
+  }
+  body {
+    font-size: 16px;
+  }
+  p{
+    font-size: 3em;
+  }
+  #amarelo {
+    color: yellow;
+  }
+  #vermelho {
+    color: red;
+  }
+  #marrom {
+    color: brown;
+  }
+      
+
