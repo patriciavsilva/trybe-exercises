@@ -108,3 +108,23 @@ function dayMouseOut() {
 }
 dayMouseOver();
 dayMouseOut();
+
+function addTask(string) {
+  let tasksContainer = document.querySelector('.my-tasks');
+  let taskName = document.createElement('span');
+
+  taskName.innerHTML = string;
+  tasksContainer.appendChild(taskName);
+}
+addTask('Projeto:');
+
+function newTaskDiv(color) {
+  let tasksContainer = document.querySelector('.my-tasks');
+  let newTask = document.createElement('div');
+
+  newTask.className = 'task';
+  newTask.style.backgroundColor = color;
+  tasksContainer.appendChild(newTask);
+}
+
+newTaskDiv('green');
