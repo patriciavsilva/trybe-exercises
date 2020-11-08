@@ -25,13 +25,14 @@ function creatDaysCalendar() {
     listDays.className = 'day';
 
     if (days === 24 || days == 31) {
-      listDays.classList.add = 'holiday';
+      listDays.classList.add('holiday');
     }
-    if (days === 4 || days === 11 || days === 18 || days === 25) {
-      listDays.classList.add = 'friday';
+    if (days === 4 || days === 11 || days === 18) {
+      listDays.classList.add('friday');
     }
     if (days === 25) {
-      listDays.className.add = 'holiday friday';
+      listDays.classList.add('holiday');
+      listDays.classList.add('friday');
     }
   }
 }
