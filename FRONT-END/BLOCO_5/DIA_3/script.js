@@ -94,23 +94,19 @@ function displayFridays() {
 let forFridays = [4, 11, 18, 25];
 displayFridays(forFridays);
 
+const dias = document.querySelector('#days');
 function dayMouseOver() {
-  let dias = document.querySelector('#days');
-
   dias.addEventListener('mouseover', function (event) {
-    event.target.style.fontSize = '30px';
-    event.target.style.fontWeight = '600';
+    event.target.style.fontSize = '28px';
+    event.target.style.fontWeight = 'bold';
   });
 }
 
 function dayMouseOut() {
-  let dias = document.querySelector('#days');
-
   dias.addEventListener('mouseout', function (event) {
-    event.target.style.fontWeight = '200';
     event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = 'normal';
   });
 }
-
 dayMouseOver();
 dayMouseOut();
