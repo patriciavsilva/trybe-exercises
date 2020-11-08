@@ -47,3 +47,21 @@ const buttonContainer = document.querySelector('.buttons-container');
 const buttonFeriados = createButton('Feriados');
 buttonFeriados.id = 'btn-holiday';
 buttonContainer.appendChild(buttonFeriados);
+
+function displayHolidays() {
+  let getButtonFeriados = document.querySelector('#btn-holiday');
+  let daysChangeColor = document.querySelectorAll('.holiday');
+
+  const colorDays = 'rgb(238,238,238)';
+  let newColor = 'red';
+  getButtonFeriados.addEventListener('click', function () {
+    for (index = 0; index < daysChangeColor.length; index += 1) {
+      if (daysChangeColor[index].style.backgroundColor === newColor) {
+        daysChangeColor[index].style.backgroundColor = colorDays;
+      } else {
+        daysChangeColor[index].style.backgroundColor = newColor;
+      }
+    }
+  });
+}
+displayHolidays();
