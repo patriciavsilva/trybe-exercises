@@ -37,3 +37,13 @@ function creatDaysCalendar() {
   }
 }
 creatDaysCalendar();
+
+function createButton(string) {
+  const button = document.createElement('button');
+  button.innerText = string;
+  return button;
+}
+const buttonContainer = document.querySelector('.buttons-container');
+const buttonFeriados = createButton('Feriados');
+buttonFeriados.id = 'btn-holiday';
+buttonContainer.appendChild(buttonFeriados);
