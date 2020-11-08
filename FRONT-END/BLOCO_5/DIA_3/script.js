@@ -48,14 +48,12 @@ const buttonFeriados = createButton('Feriados');
 buttonFeriados.id = 'btn-holiday';
 buttonContainer.appendChild(buttonFeriados);
 
-function displayHolidays() {
-  let getButtonFeriados = document.querySelector('#btn-holiday');
+function DisplayHolidays() {
   let daysChangeColor = document.querySelectorAll('.holiday');
-
-  const colorDays = 'rgb(238,238,238)';
-  let newColor = '#bc4749';
-  getButtonFeriados.addEventListener('click', function () {
-    for (index = 0; index < daysChangeColor.length; index += 1) {
+  let colorDays = 'rgb(238,238,238)';
+  let newColor = 'yellow';
+  buttonFeriados.addEventListener('click', function () {
+    for (let index = 0; index < daysChangeColor.length; index += 1) {
       if (daysChangeColor[index].style.backgroundColor === newColor) {
         daysChangeColor[index].style.backgroundColor = colorDays;
       } else {
@@ -64,7 +62,7 @@ function displayHolidays() {
     }
   });
 }
-displayHolidays();
+DisplayHolidays();
 
 function createButtonFriday(string) {
   const newButton = document.createElement('button');
@@ -79,10 +77,10 @@ newButtonContainer.appendChild(newButton);
 function displayFridays() {
   let getButtonFridays = document.querySelector('#btn-friday');
   let daysChangeText = document.querySelectorAll('.friday');
-
+  console.log('entrei aqui');
   const changeText = 'SEXTOU o/';
   getButtonFridays.addEventListener('click', function () {
-    for (index = 0; index < daysChangeText.length; index += 1) {
+    for (let index = 0; index < daysChangeText.length; index += 1) {
       if (daysChangeText[index].innerHTML !== changeText) {
         daysChangeText[index].innerHTML = changeText;
       } else {
