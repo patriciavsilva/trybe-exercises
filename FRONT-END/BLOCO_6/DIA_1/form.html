@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="input-nome">Nome</label>
+        <input type="text" name="nome" id="input-nome" required maxlength="40" />
+        <label for="input-e-mail">E-mail</label>
+        <input type="text" name="e-mail" id="input-e-mail" required maxlength="50" />
+        <label for="input-CPF">CPF</label>
+        <input type="text" name="CPF" id="input-CPF" required maxlength="11" />
+        <label for="input-endereco">Endereço</label>
+        <input type="text" name="endereco" id="input-endereco" required maxlength="200" />
+        <label for="input-cidade">Cidade</label>
+        <input type="text" name="cidade" id="input-cidade" required maxlength="28" />
+        <label for="select-estado">Estado</label>
+        <select name="estado" id="select-estado" required>
+          <option value="">Selecione um Estado</option>
+        </select>
+        <fieldset>
+          <legend>Moradia</legend>
+          <input type="radio" name="moradia" id="input-casa" value="casa" checked />
+          <label for="input-casa">Casa</label>
+          <input type="radio" name="moradia" id="input-apt" value="apartamento" checked />
+          <label for="input-apt">Apartamento</label>
+        </fieldset>
+      </fieldset>
+      <br />
+      <fieldset>
+        <fieldset>
+          <legend>Dados do Último Emprego</legend>
+          <textarea type='text' nome='curriculo' id='curriculo' cols="30" rows="10" maxlength="1000" required>Resumo do Currículo</textarea>
+          <br>
+          <label for="cargo">Cargo</label>
+          <input type='text' nome='cargo' id='cargo' maxlength="40" required>
+          <br>
+          <label for="desc-cargo">Descrição do Cargo</label>
+          <input type='text' nome='desc-cargo' id='desc-cargo' maxlength="500" required>
+          <br>
+          <label for="dInicio">Data de Inicio</label>
+          <input type="date" id="dInicio" name="dInicio" required>
+      </fieldset>
+      <div class="buttons-container">
+        <div class='buttons'>
+            <button class="botaoEnvia" type='submit' id='botaoEnvia'>Enviar</button>
+        </div>
+        <div class='buttons'>
+            <button class="botaoApaga" type='reset'>Apagar</button>
+        </div>
+    </div>
+</div>   
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
