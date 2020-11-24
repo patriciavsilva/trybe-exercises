@@ -12,4 +12,3 @@ const longestWord = text => {
 
   return result;
 }
-console.log(longestWord("meu nome é Patrícia"));
